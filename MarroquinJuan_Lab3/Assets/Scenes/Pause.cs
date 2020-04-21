@@ -9,7 +9,7 @@ public class Pause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvas = GetComponet<Canvas>();
+        canvas = GetComponent<Canvas>();
         canvas.enabled = false;
     }
 
@@ -19,7 +19,7 @@ public class Pause : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)){
             active = !active;
             canvas.enabled = true;
-            Time.timesScale = (active) ? 0 :1f;
+            Time.timeScale = (active) ? 0 :1f;
         }
     }
 }

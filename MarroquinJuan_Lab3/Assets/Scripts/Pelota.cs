@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pelota : MonoBehaviour
 {
-   public float force = 0;
-    public float jumpForce = 0;
+   public float force = 1;
+    public float jumpForce = 1;
     private Vector3 initPos;
     private int count = 0;
     Rigidbody rb;
